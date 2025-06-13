@@ -43,39 +43,39 @@ artist(38, 'pharrell-williams', solo, 'united-states').
 % release(id,title,year,release_type,artist_id).
 release(1, 'True', 2013, 'album', 14).
 release(2, 'Stories', 2015, 'album', 14).
-release(3, 'tim', 2019, 'album', 14).
-release(4, 'not-like-us', 2024, 'single', 1).
-release(5, 'levels', 2011, 'single', 14).
-release(6, 'to-pimp-a-butterfly', 2015, 'album', 1).
-release(7, 'thriller', 1982, 'album', 2).
-release(8, 'arrival', 1976, 'album', 3).
-release(9, 'discovery', 2001, 'album', 4).
-release(10, 'this-is-acting', 2016, 'album', 5).
-release(11, 'after-hours', 2020, 'album', 6).
-release(12, 'elephant', 2003, 'album', 7).
-release(13, 'master-of-puppets', 1986, 'album', 8).
-release(14, 'hybrid-theory', 2000, 'album', 9).
-release(15, 'american-idiot', 2004, 'album', 10).
-release(16, 'violator', 1990, 'album', 11).
-release(17, 'toxicity', 2001, 'album', 12).
+release(3, 'Tim', 2019, 'album', 14).
+release(4, 'Not Like Us', 2024, 'single', 1).
+release(5, 'Levels', 2011, 'single', 14).
+release(6, 'To Pimp a Butterfly', 2015, 'album', 1).
+release(7, 'Thriller', 1982, 'album', 2).
+release(8, 'Arrival', 1976, 'album', 3).
+release(9, 'Discovery', 2001, 'album', 4).
+release(10, 'This is Acting', 2016, 'album', 5).
+release(11, 'After Hours', 2020, 'album', 6).
+release(12, 'Elephant', 2003, 'album', 7).
+release(13, 'Master of Puppets', 1986, 'album', 8).
+release(14, 'Hybrid Theory', 2000, 'album', 9).
+release(15, 'American Idiot', 2004, 'album', 10).
+release(16, 'Violator', 1990, 'album', 11).
+release(17, 'Toxicity', 2001, 'album', 12).
 release(18, '1989', 2014, 'album', 13).
-release(19, 'doo-wops-&-hooligans', 2010, 'album', 16).
-release(20, 'unorthodox-jukebox', 2012, 'album', 16).
-release(21, 'the-fame', 2008, 'album', 17).
-release(22, 'chromatica', 2020, 'album', 17).
-release(23, 'die-with-a-smile', 2024, 'single', 17).
-release(24, 'uptown-special', 2015, 'album', 18).
-release(25, 'starboy', 2016, 'album', 6).
-release(26, 'my-beautiful-dark-twisted-fantasy', 2010, 'album', 24).
-release(27, 'the-fame-monster', 2009, 'ep', 17).
-release(28, 'raising-hell', 1986, 'album', 22).
-release(29, 'teenage-dream', 2010, 'album', 27).
-release(30, 'dónde-están-los-ladrones', 1998, 'album', 28).
-release(31, 'map-of-the-soul-7', 2020, 'album', 29).
-release(32, 'racine-carrée', 2013, 'album', 30).
-release(33, 'yhlqmdlg', 2020, 'album', 31).
-release(34, 'first-love', 1999, 'album', 32).
-release(35, 'mutter', 2001, 'album', 33).
+release(19, 'Doo Wops & Hooligans', 2010, 'album', 16).
+release(20, 'Unorthodox Jukebox', 2012, 'album', 16).
+release(21, 'The Fame', 2008, 'album', 17).
+release(22, 'Chromatica', 2020, 'album', 17).
+release(23, 'Die with a Smile', 2024, 'single', 17).
+release(24, 'Uptown Special', 2015, 'album', 18).
+release(25, 'Starboy', 2016, 'album', 6).
+release(26, 'My Beautiful Dark Twisted Fantasy', 2010, 'album', 24).
+release(27, 'The Fame Monster', 2009, 'ep', 17).
+release(28, 'Raising Hell', 1986, 'album', 22).
+release(29, 'Teenage Dream', 2010, 'album', 27).
+release(30, 'Dónde Están Los Ladrones', 1998, 'album', 28).
+release(31, 'Map of the Soul 7', 2020, 'album', 29).
+release(32, 'Racine Carrée', 2013, 'album', 30).
+release(33, 'YHLQMDLG', 2020, 'album', 31).
+release(34, 'First Love', 1999, 'album', 32).
+release(35, 'Mutter', 2001, 'album', 33).
 release(36, 'MIA', 2018, 'single', 31).
 release(37, 'DAMN', 2017, 'album', 1).
 release(38, 'good kid, m.A.A.d city', 2012, 'album', 1).

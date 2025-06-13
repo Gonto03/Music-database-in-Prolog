@@ -1,4 +1,4 @@
-:- module(queries, [songs_by_artist/2, genres_by_artist/2, artists_by_genre/2, songs_by_genre/2, songs_by_language/2, active_years_by_artist/2, all_international_collaborations/1, songs_by_year/2, songs_newer_than/2, songs_older_than/2, songs_between/3, bands_by_genre/2, songs_by_artist_count/2, albums_by_artist_count/2, collaborations_count/2, songs_by_artist_before_year/3, songs_by_artist_after_year/3, songs_shorter_than/2, songs_longer_than/2, songs_by_artist_shorter_than/3, songs_by_artist_longer_than/3, artists_by_country/2, albums_by_artist/2, singles_by_artist/2, collaborations/2, genres/1, songs_by_artist_genre/3, genres_by_artist_count/2]).
+:- module(queries, [songs_by_artist/2, genres_by_artist/2, artists_by_genre/2, songs_by_genre/2, songs_by_language/2, active_years_by_artist/2, all_international_collaborations/1, songs_by_year/2, songs_newer_than/2, songs_older_than/2, songs_between/3, bands_by_genre/2, songs_by_artist_count/2, albums_by_artist_count/2, collaborations_count/2, songs_by_artist_before_year/3, songs_by_artist_after_year/3, songs_shorter_than/2, songs_longer_than/2, songs_by_artist_shorter_than/3, songs_by_artist_longer_than/3, artists_by_country/2, albums_by_artist/2, singles_by_artist/2, collaborations/2, genres/1, songs_by_artist_genre/3, genres_by_artist_count/2, languages_by_artist/2, languages_by_artist_count/2, artists/1]).
 
 % SongList is a list containing every song performed by ArtistName
 songs_by_artist(SongList, ArtistName) :-
@@ -126,6 +126,9 @@ collaborations(FeaturedArtistList, MainArtistName) :-
 genres(GenreList) :-
     setof(GenreName, is_genre(GenreName), GenreList).
 
+artists(ArtistList) :-
+    setof(ArtistName, is_artist(ArtistName), ArtistList).
+
 % SongList contains every song performed by ArtistName whose genre is GenreName
 songs_by_artist_genre(SongList, ArtistName, GenreName) :-
     setof(SongTitle, song_artist_genre(SongTitle, ArtistName, GenreName), SongList).
@@ -134,3 +137,12 @@ songs_by_artist_genre(SongList, ArtistName, GenreName) :-
 genres_by_artist_count(GenreCount, ArtistName) :-
     setof(GenreName, artist_genre(ArtistName, GenreName), GenreList),
     length(GenreList, GenreCount).
+
+% LanguageList contains every language in which ArtistName performs
+languages_by_artist(LanguageList, ArtistName) :-
+    setof(Language, language_artist(Language, ArtistName), LanguageList).
+
+% LanguageCount is the number of languages in which ArtistName performs
+languages_by_artist_count(LanguageCount, ArtistName) :-
+    setof(Language, language_artist(Language, ArtistName), LanguageList),
+    length(LanguageList, LanguageCount).

@@ -1,7 +1,13 @@
-:- module(rules, [language_song/2, country_artist/2, long_songs/2, artist_type/2, artist_song/2, genre_song/2, year_song/2, old_songs/2, recent_songs/2, artist_release/2, artist_album/2, artist_single/2, release_song/2, feat_artist_song/2, artist_active_year/2, international_collaboration/3, artist_genre/2, band_genre/2, collaboration/2, old_song_artist/3, recent_song_artist/3, short_song/2, long_song/2, short_song_artist/3, long_song_artist/3, is_genre/1, song_artist_genre/3]).
+:- module(rules, [language_song/2, language_artist/2, country_artist/2, long_songs/2, artist_type/2, artist_song/2, genre_song/2, year_song/2, old_songs/2, recent_songs/2, artist_release/2, artist_album/2, artist_single/2, release_song/2, feat_artist_song/2, artist_active_year/2, international_collaboration/3, artist_genre/2, band_genre/2, collaboration/2, old_song_artist/3, recent_song_artist/3, short_song/2, long_song/2, short_song_artist/3, long_song_artist/3, is_genre/1, song_artist_genre/3, is_artist/1]).
 
 language_song(Language, SongTitle) :-
     song(_, SongTitle, _, Language, _, _).
+
+language_artist(Language, ArtistName) :-
+    song(_, _, _, Language, ReleaseID, _),
+    Language \= none,
+    release(ReleaseID, _, _, _, ArtistID),
+    artist(ArtistID, ArtistName, _, _).
 
 country_artist(Country, ArtistName) :-
     artist(_, ArtistName, _, Country).
@@ -139,6 +145,9 @@ long_song_artist(SongTitle, MinDuration, ArtistName) :-
 
 % true if GenreName is in the database
 is_genre(GenreName) :- genre(_, GenreName).
+
+% true if ArtistName is in the database
+is_artist(ArtistName) :- artist(_, ArtistName, _, _).
 
 % true if SongTitle is performed by ArtistName and its genre is GenreName
 song_artist_genre(SongTitle, ArtistName, GenreName) :-
