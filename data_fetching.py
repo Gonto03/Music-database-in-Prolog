@@ -68,14 +68,11 @@ def get_songs_by_artist(artist):
 
         for song in top_tracks:
             name = song.get('name')
-            # playcount = album.get('playcount')
-            # url = album.get('url')
             print(f"{name}")
     else:
         print(f"Error {response.status_code}: {response.text}")
 
 
-# get_top_artists(50)
+# get_top_artists(40)
 # get_albums_by_artist('Kendrick Lamar')
-get_songs_by_artist('Daft Punk')
-get_songs_by_artist('Sia')
+# get_songs_by_artist('Metallica')

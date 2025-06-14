@@ -39,6 +39,8 @@ artist(35, 'napa', band, 'portugal').
 artist(36, 'sza', solo, 'united-states').
 artist(37, 'rihanna', solo, 'barbados').
 artist(38, 'pharrell-williams', solo, 'united-states').
+artist(39, 'lana-del-rey', solo, 'united-states').
+artist(40, 'the-beatles', band, 'united-kingdom').
 
 % release(id,title,year,release_type,artist_id).
 release(1, 'True', 2013, 'album', 14).
@@ -116,26 +118,16 @@ release(72, 'Random Access Memories', 2013, 'album', 4).
 release(73, '1000 Forms of Fear', 2014, 'album', 5).
 release(74, 'Colour the Small One', 2004, 'album', 5).
 release(75, 'Everyday is Christmas', 2017, 'album', 5).
-
-% genre(id,name).
-genre(1, 'electronic').
-genre(2, 'hip-hop').
-genre(3, 'pop').
-genre(4, 'pop-rock').
-genre(5, 'synthwave').
-genre(6, 'rock').
-genre(7, 'heavy-metal').
-genre(8, 'nu-metal').
-genre(9, 'punk-rock').
-genre(10, 'country').
-genre(11, 'latin-pop').
-genre(12, 'k-pop').
-genre(13, 'chanson').
-genre(14, 'reggaeton').
-genre(15, 'j-pop').
-genre(16, 'disco').
-genre(17, 'indie-pop').
-genre(18, 'christmas').
+release(76, 'Beauty Behind the Madness', 2015, 'album', 6).
+release(77, 'My Dear Melancholy', 2018, 'ep', 6).
+release(78, 'White Blood Cells', 2001, 'album', 7).
+release(79, 'Icky Thump', 2007, 'album', 7).
+release(80, 'Get Behind Me Satan', 2005, 'album', 7).
+release(81, 'Metallica', 1991, 'album', 8).
+release(82, '...And Justice for All', 1988, 'album', 8).
+release(83, 'Reload', 1997, 'album', 8).
+release(84, 'Garage Inc.', 1998, 'album', 8).
+release(85, 'Deslocado', 2025, 'single', 35).
 
 % song(id,title,length,language,release_id,genre_id).
 song(1, 'Not Like Us', 274, english, 4, 2).
@@ -163,7 +155,7 @@ song(22, 'Alive', 292, english, 10, 3).
 song(23, 'Cheap Thrills', 223, english, 10, 3).
 song(24, 'Blinding Lights', 200, english, 11, 5).
 song(25, 'Save Your Tears', 215, english, 11, 5).
-song(26, 'Seven Nation Army', 231, english, 12, 6).
+song(26, 'Seven Nation Army', 231, english, 12, 21).
 song(27, 'The Hardest Button to Button', 205, english, 12, 6).
 song(28, 'Battery', 312, english, 13, 7).
 song(29, 'Master of Puppets', 515, english, 13, 7).
@@ -274,7 +266,57 @@ song(133, 'Elastic Heart', 257, english, 73, 3).
 song(134, 'Unstoppable', 217, english, 10, 3).
 song(135, 'The Greatest', 210, english, 10, 3).
 song(136, 'Santa\'s Coming for Us', 206, english, 75, 18).
+song(137, 'Deslocado', 179, portuguese, 85, 24).
+song(138, 'The Hills', 242, english, 76, 20).
+song(139, 'Die For You', 260, english, 25, 19).
+song(140, 'Can\'t Feel My Face', 215, english, 76, 3).
+song(141, 'Stargirl Interlude', 112, english, 25, 19).
+song(142, 'Call Out My Name', 228, english, 77, 19).
+song(143, 'I Feel It Coming', 269, english, 25, 16).
+song(144, 'Heartless', 198, english, 11, 19).
+song(145, 'Sidewalks', 231, english, 25, 6).
+song(146, 'Fell in Love With a Girl', 110, english, 78, 6).
+song(147, 'Icky Thump', 257, english, 79, 6).
+song(148, 'Blue Orchid', 157, english, 80, 6).
+song(149, 'We\'re Going to Be Friends', 148, english, 78, 22).
+song(150, 'Black Math', 184, english, 12, 6).
+song(151, 'I Just Don\'t Know What to Do With Myself', 166, english, 12, 9).
+song(152, 'My Doorbell', 241, english, 80, 23).
+song(153, 'Dead Leaves and the Dirty Ground', 184, english, 78, 6).
+song(154, 'Enter Sandman', 331, english, 81, 7).
+song(155, 'Nothing Else Matters', 388, english, 81, 7).
+song(156, 'One', 447, english, 82, 7).
+song(157, 'The Unforgiven', 387, english, 81, 7).
+song(158, 'Sad but True', 324, english, 81, 7).
+song(159, 'Fuel', 266, english, 83, 7).
+song(160, 'Whiskey in the Jar', 305, english, 84, 7).
+song(161, 'Wherever I May Roam', 404, english, 81, 7).
 
+% genre(id,name).
+genre(1, 'electronic').
+genre(2, 'hip-hop').
+genre(3, 'pop').
+genre(4, 'pop-rock').
+genre(5, 'synthwave').
+genre(6, 'rock').
+genre(7, 'heavy-metal').
+genre(8, 'nu-metal').
+genre(9, 'punk-rock').
+genre(10, 'country').
+genre(11, 'latin-pop').
+genre(12, 'k-pop').
+genre(13, 'chanson').
+genre(14, 'reggaeton').
+genre(15, 'j-pop').
+genre(16, 'disco').
+genre(17, 'indie-pop').
+genre(18, 'christmas').
+genre(19, 'r&b').
+genre(20, 'trap').
+genre(21, 'blues').
+genre(22, 'folk').
+genre(23, 'soul').
+genre(24, 'indie-rock').
 
 % feat_artist(song_id,artist_id).
 feat_artist(13, 15).
@@ -295,3 +337,5 @@ feat_artist(77, 37).
 feat_artist(78, 34).
 feat_artist(127, 38).
 feat_artist(135, 1).
+feat_artist(141, 39).
+feat_artist(145, 1).

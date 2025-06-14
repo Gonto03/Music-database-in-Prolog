@@ -39,6 +39,8 @@ match_name('napa', 'NAPA').
 match_name('sza', 'SZA').
 match_name('rihanna', 'Rihanna').
 match_name('pharrell-williams', 'Pharrell Williams').
+match_name('lana-del-rey', 'Lana del Rey').
+match_name('the-beatles', 'The Beatles').
 match_name('united-states', 'United States').
 match_name('united-kingdom', 'United Kingdom').
 match_name('canada', 'Canada').
@@ -70,5 +72,11 @@ match_name('j-pop', 'J-Pop').
 match_name('disco', 'Disco').
 match_name('indie-pop', 'Indie Pop').
 match_name('christmas', 'Christmas').
+match_name('r&b', 'R&B').
+match_name('trap', 'Trap').
+match_name('blues', 'Blues').
+match_name('folk', 'Folk').
+match_name('soul', 'Soul').
+match_name('indie-rock', 'Indie Rock').
 
 match_name(Name,Name).

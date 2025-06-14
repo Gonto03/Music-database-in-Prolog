@@ -17,7 +17,7 @@ my_write_aux([H|T]) :-
 
 run :-
     nl, writeln('Please enter your request: '),
-    % Use dashes (-) for multi-word names. Example: Michael-Jackson
+    % use dashes (-) for multi-word names. Example: Michael-Jackson
     read_line_to_string(user_input, Raw),
     normalize_input(Raw, Words),
     % if the input matches a query, then execute the query, retrieve the result and write it
